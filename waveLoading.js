@@ -285,7 +285,7 @@ var waveLoading = function () {
      * 重置当前进度，重新绘画波浪
      */
     function reset() {
-        setProgress(0);
+        progress.set(0);
         draw()
     }
 
