@@ -281,9 +281,18 @@ var waveLoading = function () {
         }
     }
 
+    /**
+     * 重置当前进度，重新绘画波浪
+     */
+    function reset() {
+        setProgress(0);
+        draw()
+    }
+
     return {
         init       : init,
         draw       : draw,
-        setProgress: progress.set
+        setProgress: progress.set,
+        reset      : reset
     }
 }();
